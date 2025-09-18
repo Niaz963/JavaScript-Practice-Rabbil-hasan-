@@ -1,0 +1,3666 @@
+Javascript এর জন্য সবচেয়ে ভাল code editor হচ্ছে webstrom
+
+
+1.
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+        document.write("Hello JavaScript")
+    </script>
+</body>
+</html>
+
+
+Ans:  Hello JavaScript
+
+
+2.
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+        var x=10;
+        var y=20;
+        var z=x+y;
+        document.write(z);
+    </script>
+</body>
+</html>
+
+Ans: 30
+
+3. 
+পার্ট 06:
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+        var A={
+            Name:"Rabbil",
+            Age:30,
+            City:"Dhaka"
+        }
+        document.write(A.Name);
+    </script>
+</body>
+</html>
+
+Ans:Rabbil
+
+এখানে A হল একটা Object
+
+4.
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+        var A=['Dhaka','Rangpur','Rajshahi']
+
+        document.write(A);
+    </script>
+</body>
+</html>
+
+Ans: Dhaka,Rangpur,Rajshahi
+
+এখানে A হল একটা Array
+
+5.
+পার্ট 08 :
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+        var age=30;
+
+        if(age>18){
+            document.write('You Are Adult');
+        }
+
+        document.write(A);
+    </script>
+</body>
+</html>
+
+Ans: You Are Adult
+
+
+6.
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+        var age=14;
+        var city="Dhaka";
+
+        if(age>18 && city=="Dhaka"){
+            document.write('You Are Adult');
+        }
+        else{
+            document.write('You Are Child');
+        }
+
+        document.write(A);
+    </script>
+</body>
+</html>
+
+Ans: You Are Child
+
+
+7.
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+        var Marks=55;
+
+        if(Marks>=80 && Marks<=100){
+            document.write("A+");
+        }
+        else if(Marks<80 && Marks>=70){
+            document.write("A");
+        } 
+        else if(Marks<70 && Marks>=60){
+            document.write("A-");
+        }
+         else if(Marks<60 && Marks>=50){
+            document.write("B");
+        }
+        else if(Marks<50 && Marks>=40){
+            document.write("C");
+        }
+         else if(Marks<40 && Marks>=33){
+            document.write("D");
+        }
+        else {
+            document.write("F");
+        }
+
+    </script>
+</body>
+</html>
+
+Ans: B
+
+8.
+পার্ট 09 Switch Case
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+        var Marks=42;
+
+        switch(true){
+
+            case(Marks<=100 && Marks>=80):
+                document.write('A+');
+            break;
+
+            case(Marks<=80 && Marks>=70):
+                document.write('A');
+            break;
+
+            case(Marks<=70 && Marks>=60):
+                document.write('A-');
+            break;
+
+            case(Marks<=60 && Marks>=50):
+                document.write('B');
+            break;
+
+            case(Marks<=50 && Marks>=40):
+                document.write('C');
+            break;
+
+            case(Marks<=40 && Marks>=33):
+                document.write('D');
+            break;
+
+            default:
+                document.write('F');
+        }
+
+    </script>
+</body>
+</html>
+
+Ans: C
+
+=======
+JS Loop
+=======
+
+
+9.
+পার্ট 10 For Loop
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+        var i;
+        for(i=0; i<10; i=i+1){
+            document.write(i+"<button>Submit</button> <br>");
+        }
+
+    </script>
+</body>
+</html>
+
+Ans:
+0Submit
+1Submit
+2Submit
+3Submit
+4Submit
+5Submit
+6Submit
+7Submit
+8Submit
+9Submit
+
+
+10.
+পার্ট 11 
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+        var i;
+        for(i=0; i<10; i=i+1){
+
+            if(i==5){
+                continue;
+            }
+            document.write(i+"<button>Submit</button> <br>");
+        }
+
+    </script>
+</body>
+</html>
+
+Ans:
+0Submit
+1Submit
+2Submit
+3Submit
+4Submit
+6Submit
+7Submit
+8Submit
+9Submit
+
+কোন একটা value কে skip করে চলে যাওয়ার জন্য continue ব্যাবহার করি।
+
+11.
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+        var i;
+        for(i=0; i<10; i=i+1){
+
+            if(i==5 || i==8){
+                continue;
+            }
+            document.write(i+"<button>Submit</button> <br>");
+        }
+
+    </script>
+</body>
+</html>
+
+Ans:
+0Submit
+1Submit
+2Submit
+3Submit
+4Submit
+6Submit
+7Submit
+9Submit
+
+
+12.
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+        var i;
+        for(i=0; i<10; i=i+1){
+
+            if(i===3){
+                break;
+            }
+            document.write(i+"<button>Submit</button> <br>");
+        }
+
+    </script>
+</body>
+</html>
+
+Ans:
+0Submit
+1Submit
+2Submit
+
+কোন একটা certain condition এ loop কে থামিয়ে দেই অথবা break করে দেই তখন break ব্যাবহার করি।
+
+13.
+পার্ট 12 While Loop
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+        var i=0;
+        while(i<3){
+            document.write(i+"<button>Submit</button> <br>");
+            i=i+1;
+
+        }
+       
+
+    </script>
+</body>
+</html>
+
+Ans:
+
+0While Loop
+1While Loop
+2While Loop
+
+14.
+পার্ট 13 Do While Loop 
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+        var i=0;
+
+        do{
+            document.write(i+"<button>do-while Loop</button> <br>");
+            i=i+1;
+        }while(i<3)
+       
+
+    </script>
+</body>
+</html>
+
+Ans:
+
+0do-while Loop
+1do-while Loop
+2do-while Loop
+
+
+============
+Function
+============
+
+15.
+পার্ট 14 Function
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+        function addTwoNumber(){
+
+            var num1=10;
+            var num2=30;
+            var num3 =num1+num2;
+
+            document.write(num3);
+
+        }
+
+       addTwoNumber();
+       
+       
+
+    </script>
+</body>
+</html>
+
+Ans: 40
+
+16.
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+        function addTwoNumber(){
+
+            var num1=10;
+            var num2=30;
+            var num3 =num1+num2;
+
+            document.write(num3+"<br>");
+
+        }
+
+       addTwoNumber();
+       addTwoNumber();
+       addTwoNumber();
+       addTwoNumber();
+       addTwoNumber();
+       addTwoNumber();
+       addTwoNumber();
+       
+       
+
+    </script>
+</body>
+</html>
+
+Ans:
+
+40
+40
+40
+40
+40
+40
+40
+
+17.
+পার্ট 15 Function Parameter
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+        function addTwoNumber(num1,num2){
+
+          
+            var num3 =num1+num2;
+
+            document.write(num3+"<br>");
+
+        }
+
+       addTwoNumber(10,20);
+   
+       
+       
+
+    </script>
+</body>
+</html>
+
+Ans: 30
+
+18.
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+        function addTwoNumber(num1,num2){
+
+          
+            var num3 =num1+num2;
+
+            document.write(num3+"<br>");
+
+        }
+
+       addTwoNumber(10,20);
+       addTwoNumber(5,2);
+       addTwoNumber(7,1);
+   
+       
+       
+
+    </script>
+</body>
+</html>
+
+Ans:
+
+30
+7
+8
+
+
+19.
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+        function WriteMyName(name){
+
+            document.write(name+"<br>");
+
+        }
+
+       WriteMyName("Jack");
+       WriteMyName("Jhon");
+       WriteMyName("Mac");
+  
+
+    </script>
+</body>
+</html>
+
+Ans:
+
+Jack
+Jhon
+Mac
+
+20.
+পার্ট 16 Function Return
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+        function addTwoNum(n1,n2){
+            return n1+n2;    
+
+        }
+
+        var newValue=addTwoNum(2,3);
+
+        document.write(newValue);
+  
+
+    </script>
+</body>
+</html>
+
+Ans: 5
+
+21.
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+        function addTwoNum(n1,n2){
+            return n1+n2;    
+
+        }
+
+        var newValue=addTwoNum(2,3)+5;
+
+        document.write(newValue);
+  
+
+    </script>
+</body>
+</html>
+
+Ans: 10
+
+
+22.
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+        function addTwoNum(n1,n2){
+            return n1+n2;    
+
+        }
+
+        var newValue=addTwoNum(2.4,3.9)+5;
+
+        document.write(newValue);
+  
+
+    </script>
+</body>
+</html>
+
+Ans: 11.3
+
+=========
+Object
+=========
+
+23.
+
+পার্ট 17 Object
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+        var MyPc={
+            brand:"HUAWEI",
+            screen:"15.6",
+            isLaptop:true,
+            ram:"8GB",
+            disk:"500GB",
+            isSSD:true,
+            pocessor:"core i-5"
+        }
+
+        document.write(MyPc['brand'])
+  
+
+    </script>
+</body>
+</html>
+
+Ans: HUAWEI
+
+24.
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+        var MyPc={
+            brand:"HUAWEI",
+            screen:"15.6",
+            isLaptop:true,
+            ram:"8GB",
+            disk:"500GB",
+            isSSD:true,
+            pocessor:"core i-5"
+        }
+
+        document.write(MyPc.disk)
+  
+
+    </script>
+</body>
+</html>
+
+Ans: 500GB
+
+
+========
+Array
+========
+
+25.
+
+পার্ট 18 Array
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+        var category=["Allium", "Beverages", "Dairy Bread & Eggs", "Fruits & Vegetables"];
+
+        document.write(category)
+  
+
+    </script>
+</body>
+</html>
+
+Ans: Allium,Beverages,Dairy Bread & Eggs,Fruits & Vegetables
+
+26.
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+        var category=["Allium", "Beverages", "Dairy Bread & Eggs", "Fruits & Vegetables"];
+
+        document.write(category[3])
+  
+
+    </script>
+</body>
+</html>
+
+Ans: Fruits & Vegetables
+
+27.
+পার্ট 19 For Loop
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+        var category=["Allium", "Beverages", "Dairy", "Fruits", "Health", "Beauty"];
+
+        var i;
+        for(i=0;i<category.length;i=i+1){
+
+            document.write(category[i]+"<br>")
+        }
+
+        
+  
+
+    </script>
+</body>
+</html>
+
+Ans:
+
+Allium
+Beverages
+Dairy
+Fruits
+Health
+Beauty
+
+28.
+
+পার্ট 20 For In Loop Over Array
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+        var category=["Allium", "Beverages", "Dairy", "Fruits", "Health", "Beauty"];
+
+      
+        for(var item in category){
+
+            document.write(category[item]+"<br>")
+        }
+
+        
+  
+
+    </script>
+</body>
+</html>
+
+Ans:
+
+Allium
+Beverages
+Dairy
+Fruits
+Health
+Beauty
+
+29.
+
+পার্ট 21 For In Over Object
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+        var Person={
+            name:"Jack",
+            age:39,
+            city:"London",
+            height:"6 Feet"
+        };
+
+      
+        for(var item in Person){
+
+            document.write(item+"<br>")
+        }
+
+        
+
+    </script>
+</body>
+</html>
+
+Ans:
+
+name
+age
+city
+height
+
+30.
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+        var Person={
+            name:"Jack",
+            age:39,
+            city:"London",
+            height:"6 Feet"
+        };
+
+      
+        for(var item in Person){
+
+            document.write(Person[item]+"<br>")
+        }
+
+        
+
+    </script>
+</body>
+</html>
+
+Ans:
+
+Jack
+39
+London
+6 Feet
+
+31.
+
+পার্ট 22 Array Concate
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+      var arr1=['A','B','C'];
+      var arr2=['D','E','F'];
+
+      var arr3=arr1.concat(arr2);
+      document.write(arr3);
+
+        
+
+    </script>
+</body>
+</html>
+
+Ans:
+
+A,B,C,D,E,F
+
+32.
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+      var Title="Learn With Rabbil";
+      var TitleArray=Array.from(Title);
+
+      document.write(TitleArray[11]);
+
+        
+
+    </script>
+</body>
+</html>
+
+Ans: R
+
+33.
+
+পার্ট 23 Array Filter
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+      var numArray=[30,32,40,55,60,80,90];
+      var result = numArray.filter(function(item){
+        return item>50
+      });
+
+      document.write(result);
+
+        
+
+    </script>
+</body>
+</html>
+
+Ans: 55,60,80,90
+
+34.
+পার্ট 24 Array Find
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+      var numArray=[30,32,40,55,60,80,90];
+      var result = numArray.find(function(value){
+        return value<35
+      });
+
+      document.write(result);
+
+        
+
+    </script>
+</body>
+</html>
+
+Ans: 30
+
+35.
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+      var numArray=[30,32,40,55,60,80,90];
+      var result = numArray.findIndex(function(value){
+        return value>80
+      });
+
+      document.write(result);
+
+        
+
+    </script>
+</body>
+</html>
+
+Ans: 6
+
+36.
+পার্ট 25 ForEach Over Array
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+      var numArray=[30,32,40,55,60,80,90];
+      numArray.forEach(function(item){
+        
+        document.write(item+"<br/>");
+
+      });
+
+ 
+
+    </script>
+</body>
+</html>
+
+Ans:
+
+30
+32
+40
+55
+60
+80
+90
+
+37.
+পার্ট 26 Array Includes And IndexOf 
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+      var numArray=[30,32,40,55,60,80,90];
+      
+      var result = numArray.includes(80);
+
+      document.write(result);
+
+     
+
+ 
+
+    </script>
+</body>
+</html>
+
+Ans: true
+
+38.
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+      var numArray=[30,32,40,55,60,80,90];
+      
+      var result = numArray.includes(100);
+
+      document.write(result);
+
+     
+
+ 
+
+    </script>
+</body>
+</html>
+
+Ans: false
+
+39.
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+      var numArray=[30,32,40,55,60,80,90];
+      
+      var result = numArray.indexOf(60);
+
+      document.write(result);
+
+     
+
+ 
+
+    </script>
+</body>
+</html>
+
+Ans: 4
+
+40.
+
+পার্ট 27 Array Pop Push Reverse
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+      var numArray=[30,32,40,55,60,80,90];
+      
+      var result = numArray.reverse();
+
+      document.write(result);
+
+
+    </script>
+</body>
+</html>
+
+Ans: 90,80,60,55,40,32,30
+
+41.
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+      var numArray=[30,32,40,55,60,80,90];
+      
+      numArray.push(100);
+      numArray.push(110);
+
+      document.write(numArray);
+
+
+    </script>
+</body>
+</html>
+
+Ans: 30,32,40,55,60,80,90,100,110
+
+42.
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+      var numArray=[30,32,40,55,60,80,90];
+      
+      numArray.pop();
+  
+      document.write(numArray);
+
+
+    </script>
+</body>
+</html>
+
+Ans:  30,32,40,55,60,80
+
+43.
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+      var numArray=[30,32,40,55,60,80,90];
+      
+      numArray.pop();
+      numArray.pop();
+      numArray.pop();
+      numArray.pop();
+  
+      document.write(numArray);
+
+
+    </script>
+</body>
+</html>
+
+Ans: 30,32,40
+
+
+44.
+
+পার্ট 28 Array Slice & Sort 
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+      var numArray=[55,60,80,30,32,40,90];
+      
+      numArray.sort();
+  
+      document.write(numArray);
+
+
+    </script>
+</body>
+</html>
+
+Ans: 30,32,40,55,60,80,90
+
+এখানে  sort() এর কাজ হল ছোট থেকে বড় প্রিন্ট করবে।
+
+45.
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+      var numArray=[55,60,80,30,32,40,90];
+      
+      numArray.sort().reverse();
+  
+      document.write(numArray);
+
+
+    </script>
+</body>
+</html>
+
+Ans: 90,80,60,55,40,32,30
+
+46.
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+      var numArray=[55,60,80,30,32,40,90];
+      
+      var result= numArray.slice(1,3);
+  
+      document.write(result);
+
+
+    </script>
+</body>
+</html>
+
+Ans: 60,80
+
+নির্দিষ্ট একটা আংশ কাটার জন্য slice() এটা ব্যাবহার করি।
+
+47. 
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+      var numArray=[55,60,80,30,32,40,90];
+      
+      var result= numArray.slice(0,3);
+  
+      document.write(result);
+
+
+    </script>
+</body>
+</html>
+
+Ans: 55,60,80
+
+48.
+
+Part 29 Array Splice
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+      var numArray=[55,60,80,30,32,40,90];
+      
+      // var result= numArray.splice(index,removeCount,item);
+
+
+      //60 Remove
+
+      numArray.splice(1,1)
+  
+      document.write(numArray);
+
+
+    </script>
+</body>
+</html>
+
+
+Ans: 55,80,30,32,40,90
+
+
+49.
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+      var numArray=[55,60,80,90,30,32,40];
+    
+
+      numArray.splice(1,2)
+  
+      document.write(numArray);
+
+
+    </script>
+</body>
+</html>
+
+Ans: 55,90,30,32,40
+
+
+50.
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+      var numArray=[55,60,80,90,30,32,40];
+    
+
+      // Add
+      numArray.splice(0,0,50);
+  
+      document.write(numArray);
+
+
+    </script>
+</body>
+</html>
+
+Ans: 50,55,60,80,90,30,32,40
+
+51.
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+      var numArray=[55,60,80,90,30,32,40];
+    
+
+      // Add
+      numArray.splice(5,0,31);
+  
+      document.write(numArray);
+
+
+    </script>
+</body>
+</html>
+
+Ans: 55,60,80,90,30,31,32,40
+
+52.
+Part 30 String Methods
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+      var country="Bangladesh";
+  
+      document.write(country.charAt(5));
+
+
+    </script>
+</body>
+</html>
+
+Ans: a
+
+53.
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+      var country="Bangladesh";
+  
+      document.write(country.charAt(0));
+
+
+    </script>
+</body>
+</html>
+
+Ans: B
+
+string এর মধ্যে কোন char কোন position আছে তা index ধরে বের করতে পারব। মানে index ধরে char বের করতে পারব।
+
+54.
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+      var country1="Bangladesh";
+      var country2="India";
+  
+      document.write(country1.concat(country2));
+
+
+    </script>
+</body>
+</html>
+
+Ans: BangladeshIndia
+
+
+concat()  এর কাজ হল জোড়া দেয়া
+
+55.
+
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+      var country="Bangladesh";
+      
+  
+      document.write(country.indexOf("g"));
+
+
+    </script>
+</body>
+</html>
+
+Ans: 3
+
+indexOf()  এর কাজ কোন একটা char, কোন index এ আছে সেই index টা বের করা।
+
+
+55.
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+      var country="Bangladesh";
+      
+  
+      document.write(country.indexOf("a"));
+
+
+    </script>
+</body>
+</html>
+
+Ans: 1
+
+56.
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+      var country="Bangladesh";
+      
+  
+      document.write(country.lastIndexOf("a"));
+
+
+    </script>
+</body>
+</html>
+
+Ans: 5
+
+একই char এক এর বেশি থাকলে তার last এর char এর Index বের করার জন্য lastIndexOf()  ব্যাবহার করি।
+
+57.
+পার্ট 31 String Methods 
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+      var country="Bangladesh";
+      
+  
+      document.write(country.replace("desh","-DESHI"));
+
+
+    </script>
+</body>
+</html>
+
+Ans: Bangla-DESHI
+
+replace()  এর কাজ হল string এর একটা specific অংশকে replace করে দিবে।
+
+58.
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+      var country="Bangladesh";
+      
+  
+      document.write(country.substr(0,4));
+
+
+    </script>
+</body>
+</html>
+
+Ans: Bang
+
+string এর একটা আংশকে আলাদা করতে পারি index এবং length ধরে। এখানে 0 হল index, 4 হল legth
+
+
+59.
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+      var country="Bangladesh";
+      
+  
+      document.write(country.substr(0,6));
+
+
+    </script>
+</body>
+</html>
+
+Ans: Bangla
+
+60.
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+      var country="Bangladesh";
+      
+  
+      document.write(country.substr(6,4));
+
+
+    </script>
+</body>
+</html>
+
+Ans: desh
+
+এখানে 6 হল index no, 4 হল length মানে index হতে total কয়টা অক্ষর কাটবে।
+
+61.
+
+Part 32 String Methods
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+      var country="Bangladesh";
+      
+  
+     
+      document.write(country.substring(6,10));
+
+
+    </script>
+</body>
+</html>
+
+Ans: desh
+
+substring()  এর কাজ হল  index no এবং string এর total length ধরে একটা specific অংশকে আলাদা করা।  
+
+
+62.
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+      var country="Bangladesh";
+
+  
+      document.write(country.slice(6, 10));
+
+
+    </script>
+</body>
+</html>
+
+Ans: desh
+
+এখানে slice() এর কাজ হল substring() এর মত, index no এবং string এর total length ধরে একটা specific অংশকে আলাদা করা।  
+
+63.
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+      var country="Bangladesh";
+      
+  
+      document.write(country.toLowerCase());
+
+
+    </script>
+</body>
+</html>
+
+Ans: bangladesh
+
+64.
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+      var country="Bangladesh";
+      
+  
+      document.write(country.toUpperCase());
+
+
+    </script>
+</body>
+</html>
+
+Ans: BANGLADESH
+
+
+65.
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+      var country1="  Bangladesh  ";
+
+      var country2=country1.trim();
+      
+  
+      document.write(country2.length);
+
+
+    </script>
+</body>
+</html>
+
+Ans: 10
+
+trim()  এর কাজ হল space রিমুভ করা।
+
+
+66.
+
+পার্ট 33 Date Object 
+
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+      var obj= new Date();
+
+  
+      document.write(obj.getDate());
+
+
+
+    </script>
+</body>
+</html>
+
+Ans: 1
+
+getDate() এটা দিয়ে আজকের date পাব। আজকের date হল ১ তারিখ।
+
+
+67.
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+      var obj= new Date();
+
+  
+      document.write(obj.getDay());
+
+
+
+    </script>
+</body>
+</html>
+
+Ans: 1
+
+getDay() এর কাজ হল আজকে সপ্তাহে কত তম দিন।
+
+68.
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+      var obj= new Date();
+
+  
+      document.write(obj.getFullYear());
+
+
+
+    </script>
+</body>
+</html>
+
+Ans: 2025
+
+69.
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+      var obj= new Date();
+
+  
+      document.write(obj.getHours());
+
+
+
+    </script>
+</body>
+</html>
+
+Ans: 23
+
+70.
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+      var obj= new Date();
+
+  
+      document.write(obj.getMinutes());
+
+
+
+    </script>
+</body>
+</html>
+
+Ans:42
+
+71.
+
+ পার্ট 34 Math Object 
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+      var num= -7;
+
+      document.write(Math.abs(num));
+
+
+    </script>
+</body>
+</html>
+
+Ans: 7
+
+
+72.
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+      var num= 7.2;
+
+      document.write(Math.ceil(num));
+
+
+    </script>
+</body>
+</html>
+
+Ans: 8
+
+73.
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+      var num= 0.2;
+
+      document.write(Math.ceil(num));
+
+
+    </script>
+</body>
+</html>
+
+Ans: 1
+
+74.
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+      var num= 7.7;
+
+      document.write(Math.floor(num));
+
+
+    </script>
+</body>
+</html>
+
+Ans: 7
+
+75.
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+
+      document.write(Math.max(22,23,56,89,90));
+
+
+    </script>
+</body>
+</html>
+
+Ans: 90
+
+76.
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+
+      document.write(Math.min(22,23,56,89,90));
+
+
+    </script>
+</body>
+</html>
+
+Ans: 22
+
+77.
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+
+      document.write(Math.random());
+
+
+    </script>
+</body>
+</html>
+
+Ans: 0 থেকে ১ এর মধ্যে random number generate করবে।
+
+78.
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+      var num= 7.7;
+
+      document.write(Math.round(num));
+
+
+    </script>
+</body>
+</html>
+
+Ans: 8
+
+round() এর কাজ closest integer number পাব।
+
+79.
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+      var num= 7.4;
+
+      document.write(Math.round(num));
+
+
+    </script>
+</body>
+</html>
+
+Ans: 7
+
+
+80.
+
+পার্ট 35 Numbers
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+      var num= 7.5;
+
+      document.write(Number.isFinite(num));
+
+
+    </script>
+</body>
+</html>
+
+Ans: true
+
+81.
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+      var num= 7.5;
+
+      document.write(Number.isInteger(num));
+
+
+    </script>
+</body>
+</html>
+
+
+Ans: false
+
+82.
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+      var num= 7;
+
+      document.write(Number.isInteger(num));
+
+
+    </script>
+</body>
+</html>
+
+Ans: true
+
+83.
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+      var num= "7.78";
+
+      document.write(Number.parseFloat(num));
+
+
+    </script>
+</body>
+</html>
+
+Ans: 7.78
+
+
+84.
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+      var num= 7.78;
+
+      document.write(Number.parseInt(num));
+
+
+    </script>
+</body>
+</html>
+
+Ans: 7
+
+85.
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+      var num= 7.788989809089809090809;
+
+      document.write(num.toFixed(3));
+
+
+    </script>
+</body>
+</html>
+
+Ans: 7.789
+
+toFixed() এর মানে দশমিক এর পর যে কয় ঘর নাম্বার চাইব সেই কয় ঘর নাম্বার পাব।
+
+86.
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+
+    <script>
+
+      var num= 7.788989809089809090809;
+
+      document.write(num.toString());
+
+
+    </script>
+</body>
+</html>
+
+Ans:  7.788989809089809
+
+toString() এর কাজ হল কোন নাম্বার কে string covert করার জন্য এটা ব্যাবহার করা হয়। এখানে 7.788989809089809  এটা একটা স্ট্রিং।
+
+
+87.
+
+পার্ট 36 Window Object 
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+
+  <button onclick="ObjAlert()">Click</button>
+    
+
+    <script>
+
+
+      function ObjAlert(){
+
+        alert("Save Success")
+      }
+
+
+    </script>
+</body>
+</html>
+
+
+Ans: Save Success
+ 
+88.
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+
+  <button onclick="ObjConfirm()">Click</button>
+    
+
+    <script>
+
+
+      function ObjConfirm(){
+
+        confirm("Do you want to delete !");
+      }
+
+
+    </script>
+</body>
+</html>
+
+Ans: Do you want to delete !
+
+89.
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+
+  <button onclick="ObjConfirm()">Click</button>
+    
+
+    <script>
+
+
+      function ObjConfirm(){
+
+        let result= confirm("Do you want to delete !");
+
+        document.write(result);
+      }
+
+
+    </script>
+</body>
+</html>
+
+Ans: এখানে ok তে ক্লিক করলে true পাব। cancel করলে false পাব।
+
+90.
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+
+  <button onclick="ObjPrompt()">Click</button>
+    
+
+    <script>
+
+
+      function ObjPrompt(){
+
+        let result= prompt("Write Your Name");
+
+        document.write(result);
+      }
+
+
+    </script>
+</body>
+</html>
+
+Ans: Niaz
+
+prompt() এর কাজ হল user এর কাজ থেকে input নেয়া।
+niaz ইনপুট নিয়েছি result এ  Niaz এসেছে।
+
+
+91.
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+
+  <button onclick="ObjOpen()">Click</button>
+    
+
+    <script>
+
+
+      function ObjOpen(){
+
+        open();
+
+        
+      }
+
+
+    </script>
+</body>
+</html>
+
+Ans: ক্লিক করলে নতুন tab open হবে।
+
+92.
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+
+  <button onclick="ObjClose()">Click</button>
+    
+
+    <script>
+
+
+      function ObjClose(){
+
+        close();
+
+        
+      }
+
+
+    </script>
+</body>
+</html>
+
+Ans: ক্লিক করলে current tab close হয়ে যাবে।
+
+93.
+
+setTimeout() এ দুটি parameter হবে। একটা parameter এ কি ঘটনা ঘটাতে হবে সেটা বলে দিব,আর একটা কত second পর ঘটনা ঘটাতে চাচ্ছি সেটা বলে দিব।
+
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+    <script>
+
+
+     setTimeout(function(){
+      alert('Alert after 5 mins')
+     },10000)
+
+
+    </script>
+</body>
+</html>
+
+Ans: 10 second পর এই  Alert after 5 mins  টি ভেসে আসবে।
+
+10000ms=10s
+
+
+
+94.
+পার্ট 37 Navigator Object
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+    <script>
+
+
+    var appCodeName=navigator.appCodeName;
+    var appName=navigator.appName;
+    var appVersion=navigator.appVersion;
+    var appEnabled=navigator.cookieEnabled;
+    var language=navigator.language;
+    var userAgent=navigator.userAgent;
+    var platform=navigator.platform;
+
+
+    document.write(appCodeName+"<br>")
+    document.write(appName+"<br>")
+    document.write(appVersion+"<br>")
+    document.write(cookieEnabled+"<br>")
+    document.write(language+"<br>")
+    document.write(userAgent+"<br>")
+    document.write(platform+"<br>")
+
+
+    </script>
+</body>
+</html>
+
+
+Ans:
+
+Mozilla
+Netscape
+5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+
+
+95.
+
+পার্ট 38 Js Geo-location
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    
+    <script>
+
+
+        navigator.geolocation.getCurrentPosition(function(position){
+
+          let altitude = position.coords.altitude;
+          let latitude = position.coords.latitude;
+          let longitude = position.coords.longitude;
+          let speed = position.coords.speed;
+
+          document.write("altitude:"+altitude+"<br>");
+          document.write("latitude:"+latitude+"<br>");
+          document.write("longitude:"+longitude+"<br>");
+          document.write("speed:"+speed+"<br>");
+        })
+
+
+    </script>
+</body>
+</html>
+
+
+Ans:
+
+altitude:null
+latitude:23.75
+longitude:90.37
+speed:null
+
+
+96.
+
+পার্ট 39 Common Events
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+
+  <button onclick="MyEvent('Click hoyese')">Click</button>
+    
+    <script>
+
+
+        function MyEvent(msg){
+            console.log(msg)
+        }
+
+
+    </script>
+</body>
+</html>
+
+Ans: Click hoyese
+
+
+97.
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+
+  <button onmouseover="MyEvent('mouse over hoyese')">mouse over</button>
+  <button onmouseout="MyEvent('mouse out hoyese')">mouse out</button>
+    
+    <script>
+
+
+        function MyEvent(msg){
+            console.log(msg)
+        }
+
+
+    </script>
+</body>
+</html>
+
+
+Ans:
+ 
+mouse over hoyese
+mouse out hoyese
+
+98.
+পার্ট 40 Common Events
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body>
+
+  <input onchange="MyEvent('change hoyese')"/><br/>
+  <input onkeydown="MyEvent('key down hoyese')"><br/>
+  <input onkeyup="MyEvent('key up hoyese')"><br/>
+    
+    <script>
+
+
+        function MyEvent(msg){
+            console.log(msg)
+        }
+
+
+    </script>
+</body>
+</html>
+
+Ans:
+
+change hoyese
+key down hoyese
+key up hoyese
+
+
+99.
+
+
+<html>
+<head>
+    
+    <title>JavaScript Practice</title>
+</head>
+<body onload="MyEvent('Load hoyese')">
+    
+    <script>
+
+
+        function MyEvent(msg){
+            console.log(msg)
+        }
+
+
+    </script>
+</body>
+</html>
+
+Ans: Load hoyese
+
+
+onload() এর কাজ হল, browser যাদি completely load করতে পারে তখন onload() কাজ করবে।
+
+
+100.
+
+পার্ট 41 Introduction to DOM
+
+পার্ট 42 Finding Elements By DOM
+
+
+ID এর মাধ্যমে multiple element find করা যায় না। একটা element ই find হয় একটা ID দিয়ে।
+
+
+<html>
+<head>
+    
+    <title>DOM Practice</title>
+</head>
+<body>
+
+    <h1 id="MyId"></h1>
+    
+    <script>
+
+      var MyElement = document.getElementById('MyId');
+
+       MyElement.innerHTML = "Eid Mobarak";
+
+
+    </script>
+</body>
+</html>
+
+Ans: Eid Mobarak
+
+101.
+
+class এর মাধ্যমে multiple element find করা যায় একটা class নাম দিয়ে।
+
+অনেক গুলো element এক সাথে find করলে,তখন সেগুলো array আকারে থাকে।
+
+
+<html>
+<head>
+    
+    <title>DOM Practice</title>
+</head>
+<body>
+
+    <h1 class="MyClass"></h1>
+    <h6 class="MyClass"></h6>
+
+    <button class="MyClass"></button>
+    
+    <script>
+
+      var MyElements = document.getElementsByClassName('MyClass');
+
+       MyElements[2].innerHTML = "Eid Mobarak";
+       
+
+
+    </script>
+</body>
+</html>
+
+Ans: Eid Mobarak
+
+102.
+
+
+<html>
+<head>
+    
+    <title>DOM Practice</title>
+</head>
+<body>
+
+    <h1 class="MyClass"></h1>
+    <h6 class="MyClass"></h6>
+
+    <button class="MyClass"></button>
+    
+    <script>
+
+      var MyElements = document.getElementsByClassName('MyClass');
+
+       MyElements[1].innerHTML = "Eid Mobarak";
+       
+
+
+    </script>
+</body>
+</html>
+
+Ans: Eid Mobarak
+
+
+
+103.
+
+
+<html>
+<head>
+    
+    <title>DOM Practice</title>
+</head>
+<body>
+
+    <h1 class="MyClass"></h1>
+    <h6 class="MyClass"></h6>
+
+    <button class="MyClass"></button>
+    
+    <script>
+
+      var MyElements = document.getElementsByClassName('MyClass');
+
+       MyElements[0].innerHTML = "Eid Mobarak";
+       
+
+
+    </script>
+</body>
+</html>
+
+Ans: Eid Mobarak
+
+104.
+
+name এর মাধ্যমে multiple element find করা যায়।
+
+
+
+<html>
+<head>
+    
+    <title>DOM Practice</title>
+</head>
+<body>
+
+    <h1 name="MyName">H1</h1>
+    <h6 name="MyName">H6</h6>
+    <button name="MyName">Button</button>
+    
+    <script>
+
+      var MyElements = document.getElementsByName('MyName');
+
+       MyElements[0].innerHTML = "H1 Manupulated";
+       MyElements[1].innerHTML = "H6 Manupulated";
+       MyElements[2].innerHTML = "Button Manupulated";
+       
+
+
+    </script>
+</body>
+</html>
+
+Ans:
+
+H1 Manupulated
+H6 Manupulated
+Button Manupulated
+
+105.
+
+
+<html>
+<head>
+    
+    <title>DOM Practice</title>
+</head>
+<body>
+
+      <p>p1</p>
+      <p>p2</p>
+      <p>p3</p>
+    
+    <script>
+
+      var MyElements = document.getElementsByTagName('p');
+
+       MyElements[0].innerHTML = "P1 Manupulated";
+       MyElements[1].innerHTML = "P2 Manupulated";
+       MyElements[2].innerHTML = "P3 Manupulated";
+       
+
+
+    </script>
+</body>
+</html>
+
+Ans:
+
+P1 Manupulated
+
+P2 Manupulated
+
+P3 Manupulated
+
+106.
+
+পার্ট 43 HTML DOM Document
+
+
+
+<html>
+<head>
+    
+    <title>DOM Practice</title>
+</head>
+<body>
+
+      <p></p>
+      <button onclick="Demo()">Click</button>
+    
+    <script>
+
+      function Demo(){
+        var info=document.cookie;
+        document.getElementsByTagName('p')[0].innerHTML=info;
+      }
+
+
+    </script>
+</body>
+</html>
+
+
+107.
+
+
+<html>
+<head>
+    
+    <title>DOM Practice</title>
+</head>
+<body>
+
+      <p></p>
+      <button onclick="Demo()">Click</button>
+    
+    <script>
+
+      function Demo(){
+        var info=document.domain;
+        document.getElementsByTagName('p')[0].innerHTML=info;
+      }
+
+
+    </script>
+</body>
+</html>
+
+Ans: localhost
+
+108.
+
+
+<html>
+<head>
+    
+    <title>DOM Practice</title>
+</head>
+<body>
+
+      <p></p>
+      <button onclick="Demo()">Click</button>
+    
+    <script>
+
+      function Demo(){
+        var info=document.lastModified;
+        document.getElementsByTagName('p')[0].innerHTML=info;
+      }
+
+
+    </script>
+</body>
+</html>
+
+Ans: 09/05/2025 17:11:06
+
+109.
+
+<html>
+<head>
+    
+    <title>DOM Practice</title>
+</head>
+<body>
+
+      <p></p>
+      <button onclick="Demo()">Click</button>
+    
+    <script>
+
+      function Demo(){
+        var info=document.title;
+        document.getElementsByTagName('p')[0].innerHTML=info;
+      }
+
+
+    </script>
+</body>
+</html>
+
+Ans: DOM Practice
+
+110.
+
+<html>
+<head>
+    
+    <title>DOM Practice</title>
+</head>
+<body>
+
+      <p></p>
+      <button onclick="Demo()">Click</button>
+    
+    <script>
+
+      function Demo(){
+        var info=document.URL;
+        document.getElementsByTagName('p')[0].innerHTML=info;
+      }
+
+
+    </script>
+</body>
+</html>
+
+Ans: file:///C:/Users/Niaz/Desktop/JsPractice/index.html
+
+111.
+
+
+<html>
+<head>
+    
+    <title>DOM Practice</title>
+</head>
+<body>
+
+  
+      <button onclick="Demo()">Click</button>
+    
+    <script>
+
+      function Demo(){
+        document.open('text/html','replace');
+        document.write("<h2>Amar Nam</h2>");
+        document.close();
+      }
+
+
+    </script>
+</body>
+</html>
+
+Ans: Amar Nam
+
+112.
+পার্ট 44 HTML DOM Document
+
+
+<html>
+<head>
+    
+    <title>DOM Practice</title>
+</head>
+<body>
+
+    
+      <button onclick="Demo()">Click</button>
+    
+    <script>
+
+      function Demo(){
+
+        let w=window.open();
+        w.document.open();
+        w.document.write("Hello New Window");
+        w.document.close();
+      }
+
+
+    </script>
+</body>
+</html>
+
+Ans: Hello New Window
+
+যখন ক্লিক করব তখন নতুন window মানে নতুন Tab এ answer দেখাবে।
+
+113.
+
+
+<html>
+<head>
+    
+    <title>DOM Practice</title>
+</head>
+<body>
+
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+
+      <button onclick="Demo()">Click</button>
+    
+    <script>
+
+      function Demo(){
+
+        let MyItems= document.getElementsByTagName('p');
+        let ItemCount=MyItems.length;
+        alert(ItemCount);
+      }
+
+
+    </script>
+</body>
+</html>
+
+Ans: 5
+
+114.
+Part 45 DOM Working With Form Input
+
+
+<html>
+<head>
+    
+    <title>DOM Practice</title>
+</head>
+<body>
+
+      <input id="num1"><br><br>
+      <input id="num2"><br><br>
+
+      <button onclick="AddTwoNumber()">Add</button>
+    
+    <script>
+
+      function AddTwoNumber(){
+
+        let num1 = document.getElementById('num1').value;
+        let num2 = document.getElementById('num2').value;
+
+        let result = parseFloat(num1)+parseFloat(num2);
+
+        alert(result);
+      }
+
+
+    </script>
+</body>
+</html>
+
+
+Ans: 7
+
+এখানে input value ৩ এবং ৪  নিয়েছি,এই দুটি যোগ করলে ৭ হবে।
+
+
+115.
+
+পার্ট 46 DOM Manupulate CSS Class 
+
+
+
+<html>
+<head>
+    
+    <title>DOM Practice</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  </head>
+<body>
+
+      <h1 id="MyID" class="">Bangladesh</h1>
+
+      <button onclick="AddStyle()">Add Style</button>
+      <button onclick="RemoveStyle()">Remove Style</button>
+    
+    <script>
+
+      function AddStyle(){
+
+        let H1Tag = document.getElementById('MyID');
+        H1Tag.classList.add('text-primary')
+      }
+
+
+      function RemoveStyle(){
+
+        let H1Tag = document.getElementById('MyID');
+        H1Tag.classList.remove('text-primary')
+      }
+
+
+    </script>
+</body>
+</html>
+
+Ans: যখন Add Style এ ক্লিক করব তখন Bangladesh লিখাটা blue হবে।
+             যখন  Remove Style এ ক্লিক করব তখন Bangladesh লিখাটা blue থাকবে  না।
+
+
+
+116.
+
+Part 47 Create Element Append Element
+
+<html>
+<head>
+    
+    <title>DOM Practice</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+	integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  </head>
+<body>
+
+      <ul id="MyItems"></ul><br><br>
+      <input id="MyInput"><br><br>
+
+      <button onclick="AddItem()">Add</button>
+    
+    
+    <script>
+
+      function AddItem(){
+
+        var itemValue = document.getElementById('MyInput').value;
+
+        var listItem = document.createElement('li');
+        listItem.innerHTML=itemValue;
+
+        var MyItems  = document.getElementById('MyItems');
+        MyItems.appendChild(listItem)
+      }
+
+
+    
+
+
+    </script>
+</body>
+</html>
+
+
+Ans: input এ যা লিখব এর পর Add এ ক্লিক করলে উপরে ul এর মধ্যে দেখাবে লিস্ট আকারে, একটা এর পর একটা।
+ input এ লিখে যতবার ক্লিক করব ততগুলো লিস্ট আকারে দেখাবে উপরে ul এর মধ্যে।
+
+
+117.
+
+Part 48 DOM Change Attribute Value
+
+
+
+<html>
+<head>
+    
+    <title>DOM Practice</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  </head>
+<body>
+
+      <img id="MyImg" src="https://rabbil.com/files/rabbilVai1.webp?v=1" alt="" width="140" height="140">
+
+      <button onclick="Changeattr()">Change</button>
+    
+    
+    <script>
+
+      function Changeattr(){
+
+        var MyImg = document.getElementById('MyImg');
+
+        MyImg.src="https://rabbil.com/files/Mask-Group-14.png"
+        MyImg.height="200"
+        MyImg.width="200"
+      }
+
+
+    </script>
+</body>
+</html>
+
+
+Ans: যখন change button এ ক্লিক করব তখন  image এর Attribute  change হবে। আগে  যেমন image  ছিল তেমন থাকবে না।
+ এভাবে Attribute change করতে পারি।
+
+
+118.
+
+Part 49 DOM Query Selector
+
+
+<html>
+<head>
+    
+    <title>DOM Practice</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+	integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  </head>
+<body>
+
+      <h1 id="myID">h1</h1>
+      <h6 class="myClass">h6</h6>
+      <p name="myName">p</p>
+      <h4>h4</h4>
+
+      <button onclick="FindElements()">Click</button>
+    
+    
+    <script>
+
+      function FindElements(){
+        document.querySelector('h4').innerHTML="h4 manupulated"
+        document.querySelector('.myClass').innerHTML="h6 manupulated"
+        document.querySelector('#myID').innerHTML="h1 manupulated"
+        document.querySelector('p[name="myName"]').innerHTML="p tag manupulated"
+
+      
+      }
+
+
+
+    </script>
+</body>
+</html>
+
+
+Ans:
+
+h1 manupulated
+h6 manupulated
+p tag manupulated
+
+h4 manupulated
+
+
+
+====================
+   Ajax Intro
+====================
+
+
+118.
+
+
+
+
+
+
+
+
+
+
+
+
