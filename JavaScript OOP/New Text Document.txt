@@ -1,0 +1,1326 @@
+OPP
+====
+
+Pert-2
+======
+
+Object:
+An Object is a unique entity that contains properties like.
+a) variable type properties
+b) methods
+c) object
+d) array
+e) and more....
+
+1.
+
+// অবজেক্ট তৈরি করা- By object literal
+//What is Object
+//How to write object using object literal
+
+
+let person={
+    first_name:"Rabbil",
+    last_name:"Hasan",
+    age:34,
+    city:"Dhaka",
+    isBangladeshi:true,
+    getName:()=>{
+        return `My full name is ${person.first_name} ${person.last_name}`;
+    }
+}
+
+console.log(person);
+
+Ans:
+
+{
+  first_name: 'Rabbil',
+  last_name: 'Hasan',
+  age: 34,
+  city: 'Dhaka',
+  isBangladeshi: true,
+  getName: [Function: getName]
+}
+
+
+2.
+
+
+// অবজেক্ট তৈরি করা- By object literal
+//What is Object
+//How to write object using object literal
+
+
+let person={
+    first_name:"Rabbil",
+    last_name:"Hasan",
+    age:34,
+    city:"Dhaka",
+    isBangladeshi:true,
+    getName:()=>{
+        return `My full name is ${person.first_name} ${person.last_name}`;
+    }
+}
+
+console.log(person.getName());
+
+Ans: My full name is Rabbil Hasan
+
+3.
+
+// অবজেক্ট তৈরি করা- By object literal
+//What is Object
+//How to write object using object literal
+
+
+let person={
+    first_name:"Rabbil",
+    last_name:"Hasan",
+    age:34,
+    city:"Dhaka",
+    isBangladeshi:true,
+    getName:()=>{
+        return `My full name is ${person.first_name} ${person.last_name}`;
+    }
+}
+
+console.log(person.age);
+
+Ans: 34
+
+
+4.
+
+// অবজেক্ট তৈরি করা- By creating instance of Object
+
+let person= Object();
+
+    person.first_name="Rabbil"
+    person.last_name="Hasan"
+    person.age=34
+    person.city="Dhaka"
+    person.isBangladeshi=true
+
+
+    person.getName=()=>{
+            return `My full name is ${person.first_name} ${person.last_name}`;
+        }
+
+
+console.log(person);
+
+
+Ans:
+
+{
+  first_name: 'Rabbil',
+  last_name: 'Hasan',
+  age: 34,
+  city: 'Dhaka',
+  isBangladeshi: true,
+  getName: [Function (anonymous)]
+}
+
+5.
+
+
+let person= Object();
+
+    person.first_name="Rabbil"
+    person.last_name="Hasan"
+    person.age=34
+    person.city="Dhaka"
+    person.isBangladeshi=true
+
+
+    person.getName=()=>{
+            return `My full name is ${person.first_name} ${person.last_name}`;
+        }
+
+
+console.log(person.age);
+
+Ans:  34
+
+
+6.
+
+// অবজেক্ট তৈরি করা- By creating instance of Object
+
+let person= Object();
+
+    person.first_name="Rabbil"
+    person.last_name="Hasan"
+    person.age=34
+    person.city="Dhaka"
+    person.isBangladeshi=true
+
+
+    person.getName=()=>{
+            return `My full name is ${person.first_name} ${person.last_name}`;
+        }
+
+
+console.log(person.getName());
+
+
+Ans: My full name is Rabbil Hasan
+
+7.
+
+// অবজেক্ট তৈরি করা- By using an Object constructor
+
+function Person(){
+
+    this.first_name="Rabbil"
+    this.last_name="Hasan"
+    this.age=34
+    this.city="Dhaka"
+    this.isBangladeshi=true
+
+    this.getName=()=>{
+        return `My name is ${this.first_name} ${this.last_name}`;
+    }
+}
+
+let PersonInstance= new Person();
+
+console.log(PersonInstance);
+
+
+Ans:
+
+Person {
+  first_name: 'Rabbil',
+  last_name: 'Hasan',
+  age: 34,
+  city: 'Dhaka',
+  isBangladeshi: true,
+  getName: [Function (anonymous)]
+}
+
+8.
+
+
+function Person(){
+
+    this.first_name="Rabbil"
+    this.last_name="Hasan"
+    this.age=34
+    this.city="Dhaka"
+    this.isBangladeshi=true
+
+    this.getName=()=>{
+        return `My name is ${this.first_name} ${this.last_name}`;
+    }
+}
+
+let PersonInstance= new Person();
+
+console.log(PersonInstance.getName());
+
+Ans: My name is Rabbil Hasan
+
+
+9.
+
+=======
+Class
+======
+
+Classes are blueprints of an Object
+a) A class can have many Objects because
+b) Class is a template while Objects are instances of the class
+c) Using let or var to declare variables inside a class is unnecessary because class
+properties are automatically scoped to the class instance and don't require explicit
+variable declarations.
+
+
+// ক্লাস তৈরি করা | ভেরিয়েবল লেখা | ফাংশন লেখা | ক্লাস থেকে অবজেক্ট তৈরি করা | প্রোপার্টি ব্যাবহার
+
+
+
+class Person{
+
+    first_name="Rabbil"
+    last_name="Hasan"
+    age=34
+    city="Dhaka"
+    isBangladeshi=true
+
+    getName(){
+        return `My name is ${this.first_name} ${this.last_name}`;
+    }
+}
+
+let PersonObj= new Person();
+
+console.log(PersonObj);
+
+
+
+
+
+
+Ans: 
+
+Person {
+  first_name: 'Rabbil',
+  last_name: 'Hasan',
+  age: 34,
+  city: 'Dhaka',
+  isBangladeshi: true
+}
+
+
+10.
+
+
+class Person{
+
+    first_name="Rabbil"
+    last_name="Hasan"
+    age=34
+    city="Dhaka"
+    isBangladeshi=true
+
+    getName(){
+        return `My name is ${this.first_name} ${this.last_name}`;
+    }
+}
+
+let PersonObj= new Person();
+
+console.log(PersonObj.last_name);
+
+
+Ans: Hasan
+
+11.
+
+// ক্লাস তৈরি করা | ভেরিয়েবল লেখা | ফাংশন লেখা | ক্লাস থেকে অবজেক্ট তৈরি করা | প্রোপার্টি ব্যাবহার
+
+class Person{
+
+    first_name="Rabbil"
+    last_name="Hasan"
+    age=34
+    city="Dhaka"
+    isBangladeshi=true
+
+    getName(){
+        return `My name is ${this.first_name} ${this.last_name}`;
+    }
+}
+
+let PersonObj= new Person();
+
+console.log(PersonObj.getName());
+
+
+Ans: My name is Rabbil Hasan
+
+
+12.
+
+// ক্লাস রি-ডিক্লেয়ার করার খুটি-নাটি
+// A class can be declared once only. if we try to declare class more than one time, it throws an error.
+
+/*
+class Person{
+
+    num1=100
+    num2=20;
+
+    addTowNum(){
+        return this.num1+this.num2;
+    }
+}
+
+class Person{
+
+    num1=10
+    num2=20;
+
+    addTowNum(){
+        return this.num1+this.num2;
+    }
+}
+
+let PersonObj= new Person();
+
+console.log(PersonObj.num1);
+
+*/
+
+//Another way to define a class is by using a class expression.
+
+
+let Person = class {
+
+    num1=100
+    num2=200;
+
+    addTowNum(){
+        return this.num1+this.num2;
+    }
+}
+
+let Person = class {
+
+    num1=1
+    num2=2;
+
+    addTowNum(){
+        return this.num1+this.num2;
+    }
+}
+
+let PersonObj= new Person();
+
+console.log(PersonObj.num1);
+
+Ans: error show করবে।
+
+
+13.
+
+// কনস্ট্রাক্টর কি | কিভাবে লেখে | কিভাবে কাজ করে
+
+
+
+// Constructor name should be Constructor
+// Constructor execute automatically when object is created
+// Constructor can take parameter
+// Constructor method can't return any result
+
+class Person {
+
+    constructor(){
+        console.log("I am a Constructor Method");
+    }
+
+}
+
+
+let PersonObj= new Person();
+
+Ans: I am a Constructor Method
+
+14.
+
+// কনস্ট্রাক্টর কি | কিভাবে লেখে | কিভাবে কাজ করে
+
+
+
+// Constructor name should be Constructor
+// Constructor execute automatically when object is created
+// Constructor can take parameter
+// Constructor method can't return any result
+
+class Person {
+
+    constructor(){
+        console.log("I am a Constructor Method");
+    }
+
+}
+
+
+let PersonObj= new Person();
+
+
+Ans:I am a Constructor Method
+
+
+15.
+
+// কনস্ট্রাক্টর প্যারামিটার কিভাবে কাজ করে
+
+
+class Person {
+
+    constructor(num1, num2) {
+        let sum=num1+num2;
+        console.log(sum);
+    }
+
+}
+
+
+let PersonObj= new Person(10,20);
+
+
+Ans: 30
+
+16.
+
+// কনস্ট্রাক্টর প্যারামিটার দিয়ে কিভাবে ক্লাস প্রপার্টি চেঞ্জ করা যায়
+
+
+class Person {
+
+    num1=10;
+    num2=20;
+
+    constructor(a, b) {
+        this.num1 = a;
+        this.num2 = b;
+
+    }
+
+    addTwoNumber(){
+        return this.num1 + this.num2;
+    }
+
+}
+
+
+let PersonObj= new Person(450,550);
+console.log(PersonObj.addTwoNumber());
+
+Ans: 1000
+
+
+17.
+
+// গেটার সেটার কি | কিভাবে কাজ করে
+
+
+class Product {
+
+    set SetPrice(value){
+        this.price = value;
+    }
+
+
+    get GetPrice(){
+        return this.price;
+    }
+
+
+}
+
+let Productobj=new Product();
+Productobj.SetPrice=100;
+console.log(Productobj);
+
+
+Ans: Product { price: 100 
+
+18.
+
+// গেটার সেটার কি | কিভাবে কাজ করে
+
+
+class Product {
+
+    set SetPrice(value){
+        this.price = value;
+    }
+
+
+    get GetPrice(){
+        return this.price;
+    }
+
+
+}
+
+let Productobj=new Product();
+Productobj.SetPrice=100;
+console.log(Productobj.GetPrice);
+
+
+Ans: 100
+
+
+19.
+
+// স্ট্যাটিক কি-ওয়ার্ড কি | কিভাবে ব্যাবহার করে | কেন ব্যাবহার করে
+//Shared Properties, Utility Functions, Memory Efficiency, Performance
+// Class এর মধ্যে স্ট্যাটিক কি-ওয়ার্ড ব্যাবহার করলে object create ছাড়াই Output পাওয়া যায়
+
+
+class Person {
+
+    static first_name="John"
+    static last_name="Smith"
+
+
+    static getName(){
+        return `My name is ${this.first_name} ${this.last_name}`
+    }
+
+}
+
+console.log(Person.first_name);
+console.log(Person.last_name);
+console.log(Person.getName());
+
+
+
+Ans: 
+
+John
+Smith
+My name is John Smith
+
+20.
+
+// ইনহেরিটেন্স কি | কিভাবে কাজ করে
+
+class Father {
+
+    num1=10;
+    num2=20;
+
+    addNumber(){
+        let sum=this.num1+this.num2;
+        console.log(sum);
+    }
+
+
+}
+
+
+class Son extends Father{
+
+}
+
+let SonObj = new Son();
+console.log(SonObj);
+
+
+Ans: Son { num1: 10, num2: 20 
+
+21.
+
+class Father {
+
+    num1=10;
+    num2=20;
+
+    addNumber(){
+        let sum=this.num1+this.num2;
+        console.log(sum);
+    }
+
+
+}
+
+
+class Son extends Father{
+
+}
+
+let SonObj = new Son();
+console.log(SonObj.num1);
+
+
+
+Ans: 10
+
+22.
+
+class Father {
+
+    num1=10;
+    num2=20;
+
+    addNumber(){
+        let sum=this.num1+this.num2;
+        console.log(sum);
+    }
+
+
+}
+
+
+class Son extends Father{
+
+}
+
+let SonObj = new Son();
+SonObj.addNumber();
+
+
+Ans: 30
+
+
+23.
+
+class Father {
+
+    num1=10;
+    num2=20;
+
+    addNumber(){
+        let sum=this.num1+this.num2;
+        console.log(sum);
+    }
+
+
+}
+
+
+class Son extends Father{
+
+}
+
+let FatherObj = new Father();
+console.log(FatherObj.num1);
+
+
+Ans: 10
+
+24.
+
+// ইনহেরিটেন্স কি | কিভাবে কাজ করে
+
+class Father {
+
+    num1=10;
+    num2=20;
+
+    addNumber(){
+        let sum=this.num1+this.num2;
+        console.log(sum);
+    }
+
+
+}
+
+
+class Son extends Father{
+
+}
+
+let FatherObj = new Father();
+FatherObj.addNumber();
+
+
+Ans: 30
+
+25.
+
+// ইনহেরিটেন্স কি | কিভাবে কাজ করে
+// Constructor inside only parent class
+// Constructor inside only parent class pass parameters
+
+// Constructor inside only child class
+// Constructor inside only child class pass parameters
+
+// Constructor inside only parent & child class
+// Constructor inside only parent & child class pass parameters
+
+
+class Father {
+
+    constructor() {
+        console.log("I am a Constructor Father Class")
+    }
+
+
+}
+
+
+class Son extends Father{
+
+}
+
+new Father();
+
+
+Ans:I am a Constructor Father Class
+
+
+26.
+// Constructor inside only parent class
+
+
+class Father {
+
+    constructor() {
+        console.log("I am a Constructor Father Class")
+    }
+
+
+}
+
+
+class Son extends Father{
+
+}
+
+new Son();
+
+
+Ans:I am a Constructor Father Class
+
+
+27.
+
+// Constructor inside only parent class pass parameters
+
+
+class Father {
+
+    constructor(msg) {
+        console.log(msg)
+    }
+
+
+}
+
+
+class Son extends Father{
+
+}
+
+new Father("This is  Constructor params from Father Class");
+new Son("This is Constructor params from Son Class");
+
+Ans:
+This is  Constructor params from Father Class
+This is Constructor params from Son Class
+
+
+28.
+
+// Constructor inside only child class
+
+
+
+
+class Father {
+
+
+}
+
+
+class Son extends Father{
+
+    constructor() {
+        super();
+        console.log('I am a constructor of Son Class');
+    }
+
+}
+
+
+new Son();
+
+
+Ans: I am a constructor of Son Class
+
+29.
+
+// ইনহেরিটেন্স কি | কিভাবে কাজ করে
+
+// Constructor inside only child class pass parameters
+
+
+class Father {
+
+
+}
+
+
+class Son extends Father{
+
+    constructor(msg) {
+        super();
+        console.log(msg);
+    }
+
+}
+
+
+new Son("This is constructor params from Son Class");
+new Father("This is constructor params from Father Class");
+
+Ans: This is constructor params from Son Class
+
+এখানে Father Class  এর কোন অউতপুট পাব না,কারন উত্তারাধিকার সুত্রে Son থেকে  Father কোন
+ডাটা পাবে না। শুধুমাত্র Son Class এর অউতপুট পাব।
+
+30.
+
+// Constructor inside only parent & child class
+
+
+class Father {
+    constructor() {
+
+        console.log("I am Father Constructor");
+    }
+
+}
+
+
+class Son extends Father{
+
+    constructor() {
+        super();
+        console.log("I am son Constructor");
+    }
+
+}
+
+new Father();
+
+Ans: I am Father Constructor
+
+31.
+
+// Constructor inside only parent & child class
+
+
+class Father {
+    constructor() {
+
+        console.log("I am Father Constructor");
+    }
+
+}
+
+
+class Son extends Father{
+
+    constructor() {
+        super();
+        console.log("I am son Constructor");
+    }
+
+}
+
+new Son();
+
+Ans: 
+
+I am Father Constructor
+I am son Constructor
+
+32.
+
+// Constructor inside only parent & child class pass parameters
+
+
+class Father {
+    constructor(msg_Father) {
+
+        console.log(msg_Father);
+    }
+
+}
+
+
+class Son extends Father{
+
+    constructor(msg_Son) {
+        super();
+        console.log(msg_Son);
+    }
+
+}
+
+new Father("I am parent class constructor");
+
+Ans: I am parent class constructor
+
+33.
+
+// Constructor inside only parent & child class pass parameters
+
+
+class Father {
+    constructor(msg_Father) {
+
+        console.log(msg_Father);
+    }
+
+}
+
+
+class Son extends Father{
+
+    constructor(msg_Son) {
+        super();
+        console.log(msg_Son);
+    }
+
+}
+
+new Father("I am parent class constructor");
+new Son("msg params from son constructor");
+
+Ans:
+
+I am parent class constructor
+undefined
+msg params from son constructor
+
+
+34.
+
+// Constructor inside only parent & child class pass parameters
+
+
+class Father {
+    constructor(msg_Father) {
+
+        console.log(msg_Father);
+    }
+
+}
+
+
+class Son extends Father{
+
+    constructor(msg_Son) {
+        super();
+        console.log(msg_Son);
+    }
+
+}
+
+new Son("msg params from son constructor");
+
+
+Ans:
+
+undefined
+msg params from son constructor
+
+
+35.
+
+// স্ট্যাটিক প্রপার্টি কিভাবে কাজ করে
+
+
+
+class Father {
+
+    static greetParent(){
+        return 'Hello, I am the Father';
+    }
+
+}
+
+
+class Son extends Father{
+
+    greetChild(){
+        return 'Hello, I am the Son';
+    }
+
+}
+
+console.log(Father.greetParent());
+console.log(Son.greetParent());
+
+
+Ans: 
+
+Hello, I am the Father
+Hello, I am the Father
+
+36.
+
+// স্ট্যাটিক প্রপার্টি কিভাবে কাজ করে
+
+
+
+class Father {
+
+    static greetParent(){
+        return 'Hello, I am the Father';
+    }
+
+}
+
+
+class Son extends Father{
+
+    static greetChild(){
+        return 'Hello, I am the Son';
+    }
+
+}
+
+console.log(Son.greetChild());
+
+
+Ans: Hello, I am the Son
+
+son বাবার data অ্যাক্সেস করতে পারে। কিন্তু বাবা son এর কাছ থেকে data অ্যাক্সেস করতে পারে না।
+
+
+37.
+
+// ওভার-রাইডিং কি | কিভাবে কাজ করে
+
+
+
+class Father {
+
+    addNumber(){
+        let num1=10;
+        let num2=20;
+        console.log(num1+num2);
+    }
+
+}
+
+
+class Son extends Father{
+
+    addNumber(){
+        let num1=100;
+        let num2=200;
+        console.log(num1+num2);
+    }
+
+}
+
+let SonObj = new Son();
+SonObj.addNumber();
+
+
+Ans: 300
+
+এখানে বাবার ডাটা ওভার-রাইডিং করে ছেলে এর ডাটা পেয়েছি।
+
+38.
+
+// ওভার-রাইডিং কি | কিভাবে কাজ করে
+
+
+
+class Father {
+
+    addNumber(){
+        let num1=10;
+        let num2=20;
+        console.log(num1+num2);
+    }
+
+}
+
+
+class Son extends Father{
+
+
+
+}
+
+let SonObj = new Son();
+SonObj.addNumber();
+
+Ans: 30
+
+এখানে বাবা এর ডাটা আউটপুট পেয়েছি।
+
+
+
+39.
+
+// ওভার-রাইডিং কি | কিভাবে কাজ করে
+
+
+
+class Father {
+
+    addNumber(){
+        let num1=10;
+        let num2=20;
+        console.log(num1+num2);
+    }
+
+}
+
+
+class Son extends Father{
+
+
+
+}
+
+let FatherObj = new Father();
+FatherObj.addNumber();
+
+Ans: 30
+
+40.
+
+// ওভারলোডিং কি | কিভাবে কাজ করে
+
+/*
+- OOP like Java or C++, method overloading allows.
+- JavaScript has no direct support for method overloading.
+- Yet, you can simulate method overloading by examining the number of arguments
+ */
+
+
+class MyClass {
+
+    myMethod(p1,p2,p3){
+       if (arguments.length===1){
+           console.log('Received one argument:', p1);
+       }
+       else if (arguments.length===2){
+           console.log('Received two arguments:', p1 , p2);
+       }
+       else if (arguments.length===3){
+           console.log('Received two arguments:', p1 , p2 , p3);
+       }
+    }
+
+}
+
+
+let Obj = new MyClass();
+Obj.myMethod(1)
+Obj.myMethod(1,2)
+Obj.myMethod(1,2,3)
+
+
+Ans: 
+
+Received one argument: 1
+Received two arguments: 1 2
+Received two arguments: 1 2 3
+
+
+
+41.
+
+// Encapsulation Using Closures
+
+
+function createCounter() {
+    let count = 0;
+
+    return {
+        increment: function (){
+            count++;
+        },
+        decrement: function (){
+            count--;
+        },
+        getCount: function (){
+            return count;
+        }
+    }
+}
+
+const counter = createCounter();
+counter.increment();  //1
+counter.increment()   //2
+counter.increment()   //3
+counter.increment()   //4
+counter.decrement();  //3
+console.log(counter.getCount());  //3
+
+
+Ans: 3
+
+42.
+
+// Encapsulation Using ES6 Classes
+
+
+class createCounter{
+
+        #count = 0
+
+        increment(){
+            this.#count++
+        }
+
+        decrement(){
+            this.#count--
+        }
+        getCount(){
+            return this.#count
+        }
+
+}
+
+let counter=new createCounter()
+counter.increment()
+counter.increment()
+counter.increment()
+counter.increment()
+counter.increment()
+counter.decrement()
+counter.decrement()
+console.log(counter.getCount())
+
+Ans:3
+
+43.
+
+// Encapsulation Using Constructor Functions
+
+
+function CreateCounter(){
+
+        let count = 0
+
+        this.increment=()=>{
+            count++
+        }
+
+        this.decrement=()=>{
+            count--
+        }
+
+        this.getCount=()=>{
+            return count;
+        }
+
+}
+
+const counter=new CreateCounter();
+
+counter.increment();
+counter.increment();
+counter.increment();
+counter.increment();
+counter.decrement();
+counter.decrement();
+
+console.log(counter.getCount())
+
+
+
+Ans: 2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
